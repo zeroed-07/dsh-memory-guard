@@ -1,0 +1,59 @@
+{
+  "name": "dsh-memory-guard",
+  "version": "0.1.2",
+  "type": "module",
+  "description": "Host memory and session-log guard for DeepSeek Harness: tracks heap and per-session log bytes, rejects oversized tool arguments, alerts on huge persisted payloads, and vacuum-shrinks bloated cold session logs.",
+  "license": "MIT",
+  "author": "dsh-memory-guard contributors",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "memory",
+    "oom",
+    "session-log",
+    "compaction",
+    "vacuum"
+  ],
+  "engines": {
+    "node": ">=22.15"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./lib/vacuum.js": "./lib/vacuum.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "dsh-memory-guard-vacuum": "./bin/vacuum-cli.mjs"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "bin/*.mjs",
+    "lib/*.js",
+    "test/*.mjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/guard.test.mjs && node test/vacuum.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

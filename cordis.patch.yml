@@ -1,0 +1,18 @@
+- insert:
+    - id: memory-guard
+      name: 'dsh-memory-guard'
+      config:
+        guardEnabled: true
+        guardExemptTools: []
+        maxToolArgBytes: 2097152
+        noticeToolArgBytes: 524288
+        heapWarnRatio: 0.75
+        heapCriticalRatio: 0.9
+        sessionLogWarnBytes: 52428800
+        sessionLogCriticalBytes: 209715200
+        maxEventWarnBytes: 8388608
+        maxEventCriticalBytes: 33554432
+        vacuumMinBytes: 10485760
+        notifyCooldownMs: 300000
+        sampleIntervalMs: 3000
+        scanIntervalMs: 15000

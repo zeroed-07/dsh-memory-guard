@@ -1,0 +1,6 @@
+node_modules/
+*.log
+*.orig-*
+tools/
+test/.tmp/
+.vacuumed.jsonl.zstd
