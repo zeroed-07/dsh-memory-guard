@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Memory Guard",
+    "description": "Monitors Host heap and session-log size, rejects oversized tool arguments, alerts on huge persisted payloads, and vacuum-shrinks bloated cold session logs."
+  }
+}
