@@ -5,6 +5,14 @@
   "description": "Host memory and session-log guard for DeepSeek Harness: tracks heap and per-session log bytes, rejects oversized tool arguments, alerts on huge persisted payloads, and vacuum-shrinks bloated cold session logs.",
   "license": "MIT",
   "author": "dsh-memory-guard contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeroed-07/dsh-memory-guard.git"
+  },
+  "homepage": "https://github.com/zeroed-07/dsh-memory-guard#readme",
+  "bugs": {
+    "url": "https://github.com/zeroed-07/dsh-memory-guard/issues"
+  },
   "keywords": [
     "deepseek",
     "harness",
