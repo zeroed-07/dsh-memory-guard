@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.3
+
+- Declare the tested host line in `engines.dsh` (`>=0.2.1-rc.2`) so plugin
+  markets can show an explicit DSH requirement instead of "unknown".
+- No runtime changes; behaviour is identical to 0.1.2.
+
 ## 0.1.2
 
 - First public release.
