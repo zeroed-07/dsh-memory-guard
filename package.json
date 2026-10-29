@@ -1,18 +1,10 @@
 {
   "name": "dsh-memory-guard",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "type": "module",
   "description": "Host memory and session-log guard for DeepSeek Harness: tracks heap and per-session log bytes, rejects oversized tool arguments, alerts on huge persisted payloads, and vacuum-shrinks bloated cold session logs.",
   "license": "MIT",
   "author": "dsh-memory-guard contributors",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zeroed-07/dsh-memory-guard.git"
-  },
-  "homepage": "https://github.com/zeroed-07/dsh-memory-guard#readme",
-  "bugs": {
-    "url": "https://github.com/zeroed-07/dsh-memory-guard/issues"
-  },
   "keywords": [
     "deepseek",
     "harness",
@@ -25,7 +17,8 @@
     "vacuum"
   ],
   "engines": {
-    "node": ">=22.15"
+    "node": ">=22.15",
+    "dsh": ">=0.2.1-rc.2"
   },
   "exports": {
     ".": "./index.js",
@@ -36,7 +29,7 @@
     "./package.json": "./package.json"
   },
   "bin": {
-    "dsh-memory-guard-vacuum": "./bin/vacuum-cli.mjs"
+    "dsh-memory-guard-vacuum": "bin/vacuum-cli.mjs"
   },
   "files": [
     "index.js",
