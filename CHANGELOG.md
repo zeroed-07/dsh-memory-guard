@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.4
+
+- Add `repository`, `homepage`, and `bugs` metadata so plugin registries can
+  associate the npm package with the GitHub repository.
+- No runtime changes.
+
 ## 0.1.3
 
 - Declare the tested host line in `engines.dsh` (`>=0.2.1-rc.2`) so plugin
